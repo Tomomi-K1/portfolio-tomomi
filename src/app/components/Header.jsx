@@ -1,14 +1,22 @@
 'use client'
+import { useEffect } from 'react';
 import Button from '@mui/material/Button';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 export default function Header(){
+
+    useEffect( () => {
+        AOS.init();  
+    }, [])
+
     return(
         <header className='w-screen h-screen text-white bg-gray-900'>
-            <div className="flex flex-col h-screen justify-center w-11/12 m-auto max-w-screen-lg">
+            <div data-aos="fade-right" className="flex flex-col h-screen justify-center w-11/12 m-auto max-w-screen-lg">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-bold">Hi, I'm <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Tomomi</span>
-                <span className="block">Full Stack Developer</span>
+                <span  data-aos="fade-right" className="block">Full Stack Developer</span>
             </h1>
         <nav className='mt-10 md:mt-10 lg:mt-24'>
             <ul className='grid grid-cols-2 sm:grid-cols-4 justify-items-start'> 
