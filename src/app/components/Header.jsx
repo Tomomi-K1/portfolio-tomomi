@@ -15,7 +15,7 @@ export default function Header(){
     return(
         <header className='w-screen h-screen text-white'>
             <div data-aos="fade-right" className="flex flex-col h-screen justify-center w-11/12 m-auto max-w-screen-lg">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-bold">Hi, I'm <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Tomomi</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-bold">Hi, I&#39;m <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Tomomi</span>
                 <span  data-aos="fade-right" className="block">Full Stack Developer</span>
             </h1>
         <nav className='mt-10 md:mt-10 lg:mt-24'>
