@@ -22,6 +22,7 @@ export default function Contact(){
                     id="email"
                     type="email"
                     name="email"
+                    className="text-black"
                 />
                 <ValidationError
                     prefix="Email"
@@ -35,6 +36,7 @@ export default function Contact(){
                     id="subject"
                     type="subject"
                     name="subject"
+                    className="text-black"
                 />
                 <ValidationError
                     prefix="Subject"
@@ -47,6 +49,7 @@ export default function Contact(){
                 <textarea
                     id="message"
                     name="message"
+                    className="text-black"
                 />
                 <ValidationError
                     prefix="Message"
