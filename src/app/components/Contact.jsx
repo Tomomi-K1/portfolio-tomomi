@@ -53,6 +53,7 @@ export default function Contact(){
                     field="message"
                     errors={state.errors}
                 />
+                <div class="g-recaptcha" data-sitekey="6LdGtV8oAAAAAIYycXHV53x8H8vg3mmpegHlCOg8"></div> 
                 <div className="text-center mt-3">
                 <Button type="submit" 
                         disabled={state.submitting}
