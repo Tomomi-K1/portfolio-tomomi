@@ -16,6 +16,51 @@
   }
 }
 
-body {
-
+.canvas1{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
+
+header{
+  display: relative;
+  overflow: hidden;
+}
+
+
+.circle {
+  width: 60rem;
+  height: 60rem;
+  filter: blur(5px);
+  overflow:hidden;
+}
+
+.circle-2{
+  position: absolute;
+  top:-250px;
+  left:-250px;
+}
+.circle-3{
+  position: absolute;
+  bottom:-550px;
+  right:-250px;
+}
+
+
+img{
+  z-index: 1;
+}
+
+.project-card{
+  padding: 2rem;
+  margin: 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 0 0 1px #fff;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+

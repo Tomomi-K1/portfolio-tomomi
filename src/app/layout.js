@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
         {/* <script src="https://www.google.com/recaptcha/api.js" async defer></script> */}
       </head>
       <body className={inter.className}>
+        <canvas className='canvas1'></canvas>
         {children}
       </body>
     </html>
