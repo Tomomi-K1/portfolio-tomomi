@@ -6,14 +6,17 @@ import Button from '@mui/material/Button';
 
 export default function Contact(){
     const [state, handleSubmit] = useForm("xzblkzvo");
-    if (state.succeeded) {
-        return <p>Thanks for contacting me! </p>;
-    }
 
     return(
     <section id="contact" className="mx-auto py-10 justify-center items-center ">
+        {state.succeeded? (
+            <div className="w-10/12 md:w-5/12 lg:w-4/12 m-auto max-w-screen-lg flex flex-col">
+                <p>Thanks for contacting me!</p>
+            </div>
+            )
+        :(
         <div className="w-10/12 md:w-5/12 lg:w-4/12 m-auto max-w-screen-lg flex flex-col">
-            <h2 className="text-2xl font-bold my-2"> Get in Touch !</h2>
+        <h2 className="text-2xl font-bold my-2"> Get in Touch !</h2>
             <form className="flex flex-col" onSubmit={handleSubmit}>
                 <label htmlFor="email">
                     Email Address
@@ -65,8 +68,10 @@ export default function Contact(){
                     Submit
                 </Button>
                 </div>
-            </form>
+            </form> 
         </div>
+        )
+    }
     </section>
     );
 }
