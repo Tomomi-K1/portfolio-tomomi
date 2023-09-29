@@ -8,14 +8,18 @@ export default function Contact(){
     const [state, handleSubmit] = useForm("xzblkzvo");
 
     return(
-    <section id="contact" className="mx-auto py-10 justify-center items-center ">
+    <section id="contact" className="mx-auto grid grid-cols-1 sm:grid-cols-2 gap-3 w-11/12 m-auto max-w-screen-lg pt-36">
+        <div>
+           <h2 className='text-left text-3xl sm:text-4xl md:text-5xl font-bold text-center sm:text-left pb-8'>Contact</h2> 
+           <p>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
+        </div>
         {state.succeeded? (
-            <div className="w-10/12 md:w-5/12 lg:w-4/12 m-auto max-w-screen-lg flex flex-col">
+            <div className="flex flex-col">
                 <p>Thanks for contacting me!</p>
             </div>
             )
         :(
-        <div className="w-10/12 md:w-5/12 lg:w-4/12 m-auto max-w-screen-lg flex flex-col">
+        <div className="flex flex-col">
         <h2 className="text-2xl font-bold my-2"> Get in Touch !</h2>
             <form className="flex flex-col" onSubmit={handleSubmit}>
                 <label htmlFor="email">

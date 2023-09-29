@@ -13,7 +13,7 @@ const projectData =[
         url: "https://find-your-furmily-paw-match.onrender.com/",
         github: "https://github.com/Tomomi-K1/find-your-furmily",
         description: "Description of Capstone Project 1",
-        imgUrl: "/paw-match.jpg",
+        imgUrl: "/podzoo.png",
         imgAlt: "screen shot of project",
         usedTech: ["HTML", "React"]
       },
@@ -22,7 +22,7 @@ const projectData =[
         url: "https://podzoo.surge.sh/",
         github: "https://podzoo.surge.sh/",
         description: "Description of Capstone Project 1",
-        imgUrl: "self-square.jpg",
+        imgUrl: "/podzoo.png",
         imgAlt: "screen shot of project",
         usedTech: ["HTML", "React"]
       }
