@@ -14,7 +14,7 @@ export default function About(){
     <section id="about" className="flex flex-col justify-center items-center ">
         <div className="w-11/12 m-auto max-w-screen-lg">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center sm:text-left mb-10">About Me</h2>
-            <div className="w-11/12 m-auto max-w-screen-lg grid grid-cols-1 sm:grid-cols-2 gap-10 justify-items-center sm:justify-items-left">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 justify-items-center sm:justify-items-left">
             <Image 
                     width={300} 
                     height={300} 

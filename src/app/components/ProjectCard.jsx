@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function ProjectCard({project}){
     return(
-        <article class="project-card">
+        <article className="project-card">
             <img src={project.imgUrl} alt={project.imgAlt} />
             {/* <p>{project.description}</p> */}
             {/* <h4>Technologies Used</h4> */}
