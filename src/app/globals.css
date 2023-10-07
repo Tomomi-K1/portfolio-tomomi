@@ -16,6 +16,10 @@
   }
 }
 
+*{
+  box-sizing: border-box;
+}
+
 .canvas1{
   position: absolute;
   top:0;
@@ -26,26 +30,46 @@
 
 header{
   display: relative;
-  overflow: hidden;
+
 }
 
 
 .circle {
-  width: 60rem;
-  height: 60rem;
+  width: 100%;
+  height: 100%;
   filter: blur(5px);
   overflow:hidden;
+  /* border: solid red 2px; */
+  /* z-index: -1 */
 }
+
+.circle-1{
+  position: absolute;
+  top:0px;
+  left:0px;
+}
+
 
 .circle-2{
   position: absolute;
-  top:-250px;
-  left:-250px;
+  bottom:0px;
+  right:0px;
 }
-.circle-3{
+
+.head_circle-1{
   position: absolute;
-  bottom:-550px;
-  right:-250px;
+  left: -20%;
+  top: -20%;
+  /* border: solid greenyellow 2px; */
+  max-height: 50%;
+}
+
+.head_circle-2{
+  position: absolute;
+  right: -40%;
+  bottom: 0px;
+  /* border: solid lightskyblue; */
+  max-height: 60%;
 }
 
 
@@ -64,3 +88,52 @@ img{
 } */
 
 
+@media screen and (min-width: 768px) {
+  .circle {
+    width: 60%;
+    height: 100%;
+  }
+
+  .head_circle-1{
+    max-height: 100%;
+  }
+  
+  .circle-2{
+    position: absolute;
+    bottom:-250px;
+    right:0px;
+  }
+  .head_circle-2{
+    max-height: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .head_circle-1{
+    position: absolute;
+    left: -20%;
+    top: -20%;
+  }
+
+  .circle-2{
+    position: absolute;
+    bottom:-350px;
+    right:0px;
+  }
+}
+
+/* container
+
+
+
+lg (1024px)
+
+max-width: 1024px;
+
+xl (1280px)
+
+max-width: 1280px;
+
+2xl (1536px)
+
+max-width: 1536px; */
