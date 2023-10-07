@@ -9,10 +9,12 @@ export default function Contact(){
     const [state, handleSubmit] = useForm("xzblkzvo");
 
     return(
-    <section id="contact" className="mx-auto grid grid-cols-1 sm:grid-cols-2 gap-3 w-11/12 m-auto max-w-screen-lg pt-36">
+    <section id="contact" className="mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-14 w-11/12 m-auto max-w-screen-lg pt-24 sm:pt-36">
         <div>
-           <h2 className='text-left text-3xl sm:text-4xl md:text-5xl font-bold text-center sm:text-left pb-8'>Contact</h2> 
-           <p>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
+            <h2 className='text-3xl sm:text-4xl md:text-5xl font-bold text-center sm:text-left pb-8'>Contact</h2> 
+            <p className='p-4'>
+                I&#39;m excited to hear from you about potential job opportunities, collaborative projects, or just to say hello. Please take a moment to fill out the form below, and I&#39;ll do my best to respond as soon as possible. Thank you for considering me for your project or job opportunity, and I can&#39;t wait to start our conversation!
+            </p>
         </div>
         {state.succeeded? (
             <div className="flex flex-col">
@@ -21,7 +23,7 @@ export default function Contact(){
             )
         :(
         <div className="flex flex-col">
-        <h2 className="text-2xl font-bold my-2"> Get in Touch !</h2>
+        <h2 className="text-2xl font-bold mb-6"> Get in Touch !</h2>
             <form className="flex flex-col" onSubmit={handleSubmit}>
                 <label htmlFor="email">
                     Email Address
@@ -30,7 +32,7 @@ export default function Contact(){
                     id="email"
                     type="email"
                     name="email"
-                    className="text-black"
+                    className="text-white bg-slate-900 border-b-2 border-white p-2"
                 />
                 <ValidationError
                     prefix="Email"
@@ -44,7 +46,7 @@ export default function Contact(){
                     id="subject"
                     type="subject"
                     name="subject"
-                    className="text-black"
+                    className="text-white bg-slate-900 border-b-2 border-white p-2"
                 />
                 <ValidationError
                     prefix="Subject"
@@ -57,15 +59,14 @@ export default function Contact(){
                 <textarea
                     id="message"
                     name="message"
-                    className="text-black"
+                    className="text-white bg-slate-900 border-b-2 border-white p-2"
                 />
                 <ValidationError
                     prefix="Message"
                     field="message"
                     errors={state.errors}
                 />
-                {/* <div class="g-recaptcha" data-sitekey="6LdGtV8oAAAAAIYycXHV53x8H8vg3mmpegHlCOg8"></div>  */}
-                <div className="text-center mt-3">
+                <div className="text-center mt-8">
                     <MainButton btnName={"submit"} />
                 </div>
             </form>

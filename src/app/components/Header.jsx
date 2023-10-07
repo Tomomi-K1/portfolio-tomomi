@@ -1,13 +1,21 @@
 'use client'
 import { useEffect } from 'react';
-import Button from '@mui/material/Button';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import MainButton from './parts/MainButton';
 
-const menu = ["project", "about", "contact", "resume"];
+const menu = [
+    {title:"projects",
+    link:"#projects"}, 
+    {title:"about",
+    link:"about"}, 
+    {title:"contact",
+    link:"contact"}, 
+    {title:"resume",
+    link:"/resume.pdf"}
+]
 
 export default function Header(){
 
@@ -32,14 +40,13 @@ export default function Header(){
             <ul className='grid grid-cols-2 sm:grid-cols-4 justify-items-start'> 
             {menu.map((m, idx)=>(
                 <li key={idx}>
-                    <a href={`#{m}`}>
-                        <MainButton  btnName={m}/>
+                    <a href={m.link}>
+                        <MainButton  btnName={m.title}/>
                     </a>
                 </li>
             ))}
             </ul>
-
-            <ul className='w-1/12 flex justify-between'> 
+            <ul className='w-[90px] flex justify-between'> 
                 <li>
                     <a href="https://www.linkedin.com/in/tomomi-kosaka/">
                         <LinkedInIcon color="white"/>
