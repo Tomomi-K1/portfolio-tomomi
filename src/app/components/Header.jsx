@@ -18,7 +18,7 @@ const menu = [
 ]
 
 export default function Header(){
-
+  
     useEffect( () => {
         AOS.init();  
     }, [])

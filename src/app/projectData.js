@@ -3,7 +3,7 @@ const projectData =[
         name: "Podzoo",
         url: "https://podzoo.surge.sh/",
         github: "https://podzoo.surge.sh/",
-        description: "Description of Capstone Project 1",
+        description: "podzoo",
         imgUrl: "/podzoo.png",
         imgAlt: "screen shot of project",
         usedTech: ["React", "Express", "Node","Material UI", "PostgreSQL" ]
