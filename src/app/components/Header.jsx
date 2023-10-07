@@ -10,9 +10,9 @@ const menu = [
     {title:"projects",
     link:"#projects"}, 
     {title:"about",
-    link:"about"}, 
+    link:"#about"}, 
     {title:"contact",
-    link:"contact"}, 
+    link:"#contact"}, 
     {title:"resume",
     link:"/resume.pdf"}
 ]

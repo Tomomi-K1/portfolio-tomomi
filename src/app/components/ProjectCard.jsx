@@ -11,7 +11,7 @@ export default function ProjectCard({project}){
             <div>
                 <h3 className="text-2xl text-left font-bold">{project.name}</h3>
                 <ul className='flex flex-wrap justify-start'>
-                <h4 className='font-bold'>Built with: </h4>
+                <h4 className='font-bold pr-1'>Built with:</h4>
                 {project.usedTech.map((t, idx)=>
                     <li key={idx} className="mr-1">{t}</li>
                 )}
