@@ -2,6 +2,7 @@
 
 import { useForm, ValidationError } from '@formspree/react';
 import Button from '@mui/material/Button';
+import MainButton from './parts/MainButton';
 
 
 export default function Contact(){
@@ -65,12 +66,7 @@ export default function Contact(){
                 />
                 {/* <div class="g-recaptcha" data-sitekey="6LdGtV8oAAAAAIYycXHV53x8H8vg3mmpegHlCOg8"></div>  */}
                 <div className="text-center mt-3">
-                <Button type="submit" 
-                        disabled={state.submitting}
-                        className="mb-5  border-white text-white transition duration-600 hover:border-none hover:bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400" 
-                        variant="outlined">
-                    Submit
-                </Button>
+                    <MainButton btnName={"submit"} />
                 </div>
             </form>
         </div>

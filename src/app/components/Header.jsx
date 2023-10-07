@@ -31,9 +31,12 @@ export default function Header(){
         <nav className='mt-10 md:mt-10 lg:mt-24'>
             <ul className='grid grid-cols-2 sm:grid-cols-4 justify-items-start'> 
             {menu.map((m, idx)=>(
-                <MainButton key={idx} btnName={m}/>
+                <li key={idx}>
+                    <a href={`#{m}`}>
+                        <MainButton  btnName={m}/>
+                    </a>
+                </li>
             ))}
-
             </ul>
 
             <ul className='w-1/12 flex justify-between'> 
