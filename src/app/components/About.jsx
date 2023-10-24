@@ -24,7 +24,7 @@ export default function About(){
                     className='rounded-full'
                     />
                 <div className="about_content flex flex-col justify-center items-center z-[1]">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime adipisci unde, ea nobis sapiente voluptatum quas veritatis dolores ad tenetur optio esse beatae quisquam nam id illum consequuntur sequi hic.</p>
+                    <p className='p-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime adipisci unde, ea nobis sapiente voluptatum quas veritatis dolores ad tenetur optio esse beatae quisquam nam id illum consequuntur sequi hic.</p>
                 </div>
             
             </div>

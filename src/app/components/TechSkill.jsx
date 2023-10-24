@@ -3,8 +3,51 @@ import React, { useEffect } from'react';
 import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import { AiFillHtml5 } from "react-icons/ai";
 
 
+const frontend =[
+    {name:"React",
+    icon: <AiFillHtml5 className='mr-1'/>},
+    {name:"Next.js",
+    icon: <AiFillHtml5 className='mr-1'/>},
+    {name:"HTML",
+    icon: <AiFillHtml5 className='mr-1'/>},
+    {name:"CSS",
+    icon: <AiFillHtml5 className='mr-1'/>},
+    {name:"Javascript",
+    icon: <AiFillHtml5 className='mr-1'/>},
+    {name:"JQuery",
+    icon: <AiFillHtml5 className='mr-1'/>},
+    {name:"Tailwind CSS",
+    icon: <AiFillHtml5 className='mr-1'/>},
+    {name:"Bootstrap",
+    icon: <AiFillHtml5 className='mr-1'/>},
+    {name:"Material UI",
+    icon: <AiFillHtml5 className='mr-1'/>}
+];
+
+const backend = [
+    {name:"Material UI",
+    icon: <AiFillHtml5 className='mr-1'/>}
+]
+
+{/* <li className='mr-2'>Node.js</li>
+<li className='mr-2'>PostgreSQL</li>
+<li className='mr-2'>Express.js</li>
+<li className='mr-2'>Python</li>
+<li className='mr-2'>Flask</li>
+<li className='mr-2'>SQLAlchemy</li>
+<li className='mr-2'>Jinja</li> */}
+
+const others = [
+    {name:"Git",
+    icon: <AiFillHtml5 className='mr-1'/>}
+]
+{/* <li className='mr-2'>Github</li>
+<li className='mr-2'>Linux</li>
+<li className='mr-2'>Photoshop</li>
+<li className='mr-2'>Figma</li> */}
 
 export default function TechSkill(){
     useEffect( () => {
@@ -17,35 +60,40 @@ export default function TechSkill(){
                 <article data-aos="fade-right" className='pb-5'>
                     <h5 className='font-bold text-xl'>Frontend</h5>
                     <ul className='flex flex-wrap sm:flex-col'>
-                        <li className='mr-2'>HTML</li>
-                        <li className='mr-2'>CSS</li>
-                        <li className='mr-2'>Javascript</li>
-                        <li className='mr-2'>React</li>
-                        <li className='mr-2'>Next.js</li>
-                        <li className='mr-2'>Tailwind CSS</li>
-                        <li className='mr-2'>Bootstrap</li>
-                        <li className='mr-2'>Material UI</li>
+                        {frontend.map((item, idx) =>{
+                            return(
+                                <li key={idx} className='m-2 flex justify-start items-center'>
+                                    {item.icon}  
+                                    {item.name}
+                                </li>
+                            )
+                        })}
                     </ul>
                 </article>
                 <article data-aos="fade-right" className='pb-5'>
                     <h5 className='font-bold text-xl'>Backend</h5>
                       <ul className='flex flex-wrap sm:flex-col'>
-                        <li className='mr-2'>Node.js</li>
-                        <li className='mr-2'>PostgreSQL</li>
-                        <li className='mr-2'>Express.js</li>
-                        <li className='mr-2'>Python</li>
-                        <li className='mr-2'>Flask</li>
-                        <li className='mr-2'>SQLAlchemy</li>
-                        <li className='mr-2'>Jinja</li>
+                      {backend.map((item, idx) =>{
+                            return(
+                                <li key={idx} className='m-2 flex justify-start items-center'>
+                                    {item.icon}  
+                                    {item.name}
+                                </li>
+                            )
+                        })}
                     </ul>
                 </article>
                 <article data-aos="fade-right" className='pb-5'>
                     <h5 className='font-bold text-xl'>Others</h5>
                     <ul className='flex flex-wrap sm:flex-col'>
-                        <li className='mr-2'>Github</li>
-                        <li className='mr-2'>Linux</li>
-                        <li className='mr-2'>Photoshop</li>
-                        <li className='mr-2'>Figma</li>
+                    {others.map((item, idx) =>{
+                            return(
+                                <li key={idx} className='m-2 flex justify-start items-center'>
+                                    {item.icon}  
+                                    {item.name}
+                                </li>
+                            )
+                        })}
                     </ul>
                 </article>
             </div>

@@ -1,12 +1,17 @@
 'use client'
 
 import { useForm, ValidationError } from '@formspree/react';
-import Button from '@mui/material/Button';
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import MainButton from './parts/MainButton';
+import './Contact.css';
 
 
 export default function Contact(){
-    const [state, handleSubmit] = useForm("xzblkzvo");
+    const { executeRecaptcha } = useGoogleReCaptcha();
+
+    const [state, handleSubmit] = useForm("xzblkzvo", {
+        data: { "g-recaptcha-response": executeRecaptcha }
+      });
 
     return(
     <section id="contact" className="mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-14 w-11/12 m-auto max-w-screen-lg pt-24 sm:pt-36">
@@ -39,7 +44,7 @@ export default function Contact(){
                     field="email"
                     errors={state.errors}
                 />
-                <label htmlFor="subject">
+                <label htmlFor="subject" className='mt-2'>
                     Subject
                 </label>
                 <input
@@ -53,7 +58,7 @@ export default function Contact(){
                     field="subject"
                     errors={state.errors}
                 />
-                <label htmlFor="message">
+                <label htmlFor="message" className='mt-2'>
                     Messages
                 </label>
                 <textarea
@@ -73,7 +78,6 @@ export default function Contact(){
         </div>
         )
     }
-    
     </section>
     );
 }
