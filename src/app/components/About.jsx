@@ -24,7 +24,7 @@ export default function About(){
                     className='rounded-full'
                     />
                 <div className="about_content flex flex-col justify-center items-center z-[1]">
-                    <p className='p-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime adipisci unde, ea nobis sapiente voluptatum quas veritatis dolores ad tenetur optio esse beatae quisquam nam id illum consequuntur sequi hic.</p>
+                    <p className='p-4 text-lg'> I have over a decade of experience in customer service and administration, where I naturally gravitated towards solving tech-related issues. This curiosity eventually led me to pursue a career in software development, allowing me to merge my love for technology with practical problem-solving skills. With my background in customer service and my technical expertise, I offer a unique blend of capabilities. I&apos;m not only a dependable team player but also proficient in handling customer-facing tasks. I&apos;m  thrilled to put my skills and knowledge to work, ready to tackle any task that comes my way!</p>
                 </div>
             
             </div>

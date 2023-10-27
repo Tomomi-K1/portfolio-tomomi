@@ -9,7 +9,7 @@ export default function Footer(){
                 <li><a href="https://www.linkedin.com/in/tomomi-kosaka/"><LinkedInIcon color="white"/></a></li>
                 <li><a href="https://github.com/Tomomi-K1"><GitHubIcon /></a></li>
             </ul>
-            <p>created and designed by <span className="font-bold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Tomomi Kosaka</span></p>
+            <p>Created and designed by <span className="font-bold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Tomomi Kosaka</span></p>
         </footer>
     );
 }
