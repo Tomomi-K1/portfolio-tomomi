@@ -7,44 +7,31 @@ import { AiFillHtml5 } from "react-icons/ai";
 
 
 const frontend =[
-    {name:"React",
-    icon: <AiFillHtml5 className='mr-1'/>},
-    {name:"Next.js",
-    icon: <AiFillHtml5 className='mr-1'/>},
-    {name:"HTML",
-    icon: <AiFillHtml5 className='mr-1'/>},
-    {name:"CSS",
-    icon: <AiFillHtml5 className='mr-1'/>},
-    {name:"Javascript",
-    icon: <AiFillHtml5 className='mr-1'/>},
-    {name:"JQuery",
-    icon: <AiFillHtml5 className='mr-1'/>},
-    {name:"Tailwind CSS",
-    icon: <AiFillHtml5 className='mr-1'/>},
-    {name:"Bootstrap",
-    icon: <AiFillHtml5 className='mr-1'/>},
-    {name:"Material UI",
-    icon: <AiFillHtml5 className='mr-1'/>}
+    {name:"React",},
+    {name:"Next.js",},
+    {name:"HTML",},
+    {name:"CSS",},
+    {name:"Javascript",},
+    {name:"JQuery",},
+    {name:"Tailwind CSS",},
+    {name:"Bootstrap",},
+    {name:"Material UI",}
 ];
 
 const backend = [
-    {name:"Node",
-    icon: <AiFillHtml5 className='mr-1'/>},
-    {name:"Express",
-    icon: <AiFillHtml5 className='mr-1'/>}
+    {name:"Node"},
+    {name:"Express"},
+    {name:"Python"},
+    {name:"Flask"},
+    {name:"PostgreSQL"},
+    {name:"SQLAlchemy"}
 ]
 
-{/* <li className='mr-2'>Node.js</li>
-<li className='mr-2'>PostgreSQL</li>
-<li className='mr-2'>Express.js</li>
-<li className='mr-2'>Python</li>
-<li className='mr-2'>Flask</li>
-<li className='mr-2'>SQLAlchemy</li>
-<li className='mr-2'>Jinja</li> */}
-
 const others = [
-    {name:"Git",
-    icon: <AiFillHtml5 className='mr-1'/>}
+    {name:"Git"},
+    {name:"GitHub"},
+    {name:"Jest"},
+    {name:"Jasmine"}
 ]
 
 
@@ -66,13 +53,12 @@ export default function TechSkill(){
 
 function TechList({title, list}){
     return(
-        <article data-aos="fade-right" className='pb-5'>
+        <article data-aos="fade-right" data-aos-duration="1500" className='pb-5'>
             <h5 className='font-bold text-xl'>{title}</h5>
             <ul className='flex flex-wrap'>
                 {list.map((item, idx) =>{
                     return(
                         <li key={idx} className='m-2 flex justify-start items-center rounded-3xl px-4 py-1 bg-gray-700'>
-                            {item.icon}  
                             {item.name}
                         </li>
                     )

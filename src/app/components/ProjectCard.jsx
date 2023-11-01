@@ -1,11 +1,17 @@
 'use client'
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import MainButton from './parts/MainButton';
+import AOS from 'aos';
 
 export default function ProjectCard({project}){
     const [hover, setHover] =useState(false);
+    useEffect( () => {
+        AOS.init();  
+    }, [])
+
     return(
-        <article onMouseOver={()=>setHover(true)} onMouseOut={()=>setHover(false)}className="project-card p-5 rounded-lg  hover:bg-gray-600 hover:bg-opacity-20">
+        <article data-aos="fade-up" data-aos-duration="1500" onMouseOver={()=>setHover(true)} onMouseOut={()=>setHover(false)}className="project-card p-5 rounded-lg  hover:bg-gray-600 hover:bg-opacity-20 hover:shadow-sm hover:shadow-white">
             <img src={project.imgUrl} alt={project.imgAlt} />
             {/* <p>{project.description}</p> */}
             {/* <h4>Technologies Used</h4> */}
@@ -17,10 +23,14 @@ export default function ProjectCard({project}){
                     <li key={idx} className="mr-1 mb-1 text-xs bg-gray-700 py-1 px-2 rounded-lg">{t}</li>
                 )}
                 </ul>
-                <ul className='mt-2 flex flex-wrap items-start justify-start'>
-                    <li className='hover:bg-blue-500 border rounded-md px-2 py-1 mr-2'><a href={project.url}>Demo</a></li>
-                    <li className='hover:bg-blue-500 border rounded-md px-2 py-1'><a href={project.github}>Code</a></li>
-                </ul>
+                <div className='mt-2 flex flex-wrap items-start justify-start gap-3'>
+                    <a href={project.url} target="_blank" rel="noopener noreferrer">
+                        <MainButton btnName={"Demo"} />
+                    </a>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <MainButton btnName={"Code"} />
+                    </a>
+                </div>
             </div>
         </article>
     );

@@ -22,7 +22,7 @@ export default function Contact(){
             </p>
         </div>
         {state.succeeded? (
-            <div className="flex flex-col">
+            <div className="flex flex-col items-center justify-center">
                 <p>Thanks for contacting me!</p>
             </div>
             )
