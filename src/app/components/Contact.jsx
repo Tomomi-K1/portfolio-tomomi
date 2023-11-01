@@ -38,6 +38,7 @@ export default function Contact(){
                     type="email"
                     name="email"
                     className="text-white bg-slate-900 border-b-2 border-white p-2"
+                    required
                 />
                 <ValidationError
                     prefix="Email"
@@ -52,6 +53,7 @@ export default function Contact(){
                     type="subject"
                     name="subject"
                     className="text-white bg-slate-900 border-b-2 border-white p-2"
+                    required
                 />
                 <ValidationError
                     prefix="Subject"
@@ -65,6 +67,7 @@ export default function Contact(){
                     id="message"
                     name="message"
                     className="text-white bg-slate-900 border-b-2 border-white p-2"
+                    required
                 />
                 <ValidationError
                     prefix="Message"
