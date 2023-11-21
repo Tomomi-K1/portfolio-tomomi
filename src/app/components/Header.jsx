@@ -14,7 +14,7 @@ const menu = [
     {title:"contact",
     link:"#contact"}, 
     {title:"resume",
-    link:"/resume.pdf"}
+    link:"/temporary.pdf"}
 ]
 
 export default function Header(){
