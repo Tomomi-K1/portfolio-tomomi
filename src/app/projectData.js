@@ -1,7 +1,7 @@
 const projectData =[
     {
         name: "Podzoo",
-        url: "https://podzoo.surge.sh/",
+        url: "https://podzoo-fullstack.vercel.app/",
         github: "https://github.com/Tomomi-K1/podzoo-fullstack",
         description: "Podzoo is a podcast discovery full-stack web application that not only lets you explore new shows but also empowers you to leave reviews and bookmark your favorite podcasts. (Please wait for it to start up. I'm using free tier on Render.com) ",
         imgUrl: "/podzoo.png",
