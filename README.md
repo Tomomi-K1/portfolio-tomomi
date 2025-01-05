@@ -1,5 +1,5 @@
 # My Portfolio Site ⭐
-Live site: [Tomomi Kosaka Portfolio](https://www.tomomikosaka.tech/)
+Live site: [Tomomi Kosaka Portfolio](https://tomomi-kosaka.vercel.app/)
 ![image](public/portfolio.png)
 
 # Features
