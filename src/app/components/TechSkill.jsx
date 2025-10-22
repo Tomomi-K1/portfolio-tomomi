@@ -1,9 +1,7 @@
 'use client'
 import React, { useEffect } from 'react';
-import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { AiFillHtml5 } from "react-icons/ai";
 
 
 const frontend = [
@@ -12,6 +10,7 @@ const frontend = [
     { name: "Javascript", },
     { name: "Typescript", },
     { name: "Tailwind CSS", },
+    { name: "Tanstack Query", },
     { name: "Radix UI", },
     { name: "HTML", },
     { name: "CSS", }
@@ -20,9 +19,9 @@ const frontend = [
 const backend = [
     { name: "Node" },
     { name: "tRPC" },
-    { name: "Express" },
     { name: "PostgreSQL" },
     { name: "Prisma" },
+    { name: "Express" },
     { name: "Python" },
 ]
 

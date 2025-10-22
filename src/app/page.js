@@ -23,7 +23,6 @@ export default function Home() {
 
   return (
     <div className="text-white bg-slate-900">
-      {/* <div className='text-brown bg-yellow-100'> */}
       <Header />
       <main>
         <About />
