@@ -21,7 +21,7 @@ const menu = [
     },
     {
         title: "resume",
-        link: "/temporary.pdf"
+        link: "/tomomi-kosaka-resume.pdf"
     }
 ]
 
