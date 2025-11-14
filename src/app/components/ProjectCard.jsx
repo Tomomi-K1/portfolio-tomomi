@@ -22,9 +22,9 @@ export default function ProjectCard({ project }) {
                     )}
                 </ul>
                 <div className='mt-2 flex flex-wrap items-start justify-start gap-3'>
-                    {/* <a href={project.url} target="_blank" rel="noopener noreferrer">
+                    {project.url && <a href={project.url} target="_blank" rel="noopener noreferrer">
                         <MainButton btnName={"Demo"} />
-                    </a> */}
+                    </a>}
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
                         <MainButton btnName={"Code"} />
                     </a>

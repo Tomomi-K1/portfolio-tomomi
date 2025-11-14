@@ -11,7 +11,6 @@ const projectData = [
   },
   {
     name: "Paw Match",
-    url: "https://find-your-furmily-paw-match.onrender.com/",
     github: "https://github.com/Tomomi-K1/find-your-furmily",
     description:
       "Paw Match is a passion project crafted to simplify the search for adoptable animals. I love animals and I wanted to make something that could help animals get adopted. (Please wait for it to start up. I'm using free tier on Render.com) ",
